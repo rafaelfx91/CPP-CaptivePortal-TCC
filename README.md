@@ -85,90 +85,105 @@ URLs de Acesso:
 <table> <thead> <tr> <th>Componente</th> <th>Quantidade</th> <th>Observações</th> <th>📸</th> </tr> </thead> <tbody> <tr> <td><strong>ESP32</strong></td> <td>1 unidade</td> <td>NodeMCU-32S ou ESP32 DevKit V1</td> <td>🟢</td> </tr> <tr> <td><strong>Cabo USB</strong></td> <td>1 unidade</td> <td>USB-C ou Micro-USB para alimentação e programação</td> <td>🔌</td> </tr> <tr> <td><strong>Fonte de Energia</strong></td> <td>1 unidade</td> <td>Powerbank 5V/2A ou adaptador USB</td> <td>🔋</td> </tr> <tr> <td><strong>Computador</strong></td> <td>1 unidade</td> <td>Com Arduino IDE instalado</td> <td>💻</td> </tr> </tbody> </table>
 
 
-⚙️ Instalação e Configuração
-1. Preparação do Ambiente
-	# Instalar Arduino IDE
-	# Adicionar URL do ESP32 no Boards Manager:
-	https://espressif.github.io/arduino-esp32/package_esp32_index.json
- 
+<h3>⚙️ Instalação e Configuração</h3>
 
-2. Instalação das Bibliotecas
-// Bibliotecas necessárias:
-#include <WiFi.h>
-#include <WebServer.h>
-#include <DNSServer.h>
-#include "SPIFFS.h"
+<h3>1. Preparação do Ambiente</h3>
+<ul>
+	<li># Instalar Arduino IDE</li>
+	<li># Adicionar URL do ESP32 no Boards Manager:</li>
+	<li>https://espressif.github.io/arduino-esp32/package_esp32_index.json</li>
+</ul>
+
+<h3>2. Instalação das Bibliotecas</h3>
+<h4>// Bibliotecas necessárias:</h4>
+<ul>
+	<li>#include <WiFi.h></li>
+	<li>#include <WebServer.h></li>
+	<li>#include <DNSServer.h></li>
+	<li>#include "SPIFFS.h"</li>
+ </ul>
+ 
+<h3>3. Configuração do Código</h3>
+<h4>// Configurações principais:</h4>
+<ul>
+	<li>String wifiName = "WiFi 5G Livre";  // Nome da rede</li>
+	<li>IPAddress apIP(192, 168, 4, 1);     // IP fixo do AP</li>
+</ul>
+ 
+<h3>4. Upload e Teste</h3>
+<ul>
+	<li>Conecte o ESP32 via USB</li>
+	<li>Selecione a porta COM correta</li>
+	<li>Faça upload do código</li>
+	<li>Abra Serial Monitor (115200 baud)</li>
+</ul>
  
  
-3. Configuração do Código
-// Configurações principais:
-String wifiName = "WiFi 5G Livre";  // Nome da rede
-IPAddress apIP(192, 168, 4, 1);     // IP fixo do AP
- 
- 
-4. Upload e Teste
- .Conecte o ESP32 via USB
- .Selecione a porta COM correta
- .Faça upload do código
- .Abra Serial Monitor (115200 baud)
- 
- 
- 📖 Metodologia de Pesquisa
+<h3>📖 Metodologia de Pesquisa</h3>
+
 Abordagem Educacional
-    Demonstração Prática dos riscos de phishing
-    Conscientização sobre redes WiFi públicas
-    Identificação de páginas falsas
+<ul>
+    <li>Demonstração Prática dos riscos de phishing</li>
+    <li>Conscientização sobre redes WiFi públicas</li>
+    <li>Identificação de páginas falsas</li>
+</ul>
 
+<h3>Coleta de Dados (Ética)</h3>
+<ul>
+    <li>Apenas dados fictícios para demonstração</li>
+    <li>Participantes informados sobre o experimento</li>
+    <li>Dados destruídos após pesquisa</li>
+</ul>
 
-Coleta de Dados (Ética)
-    Apenas dados fictícios para demonstração
-    Participantes informados sobre o experimento
-    Dados destruídos após pesquisa
+<h3>🎓 Aplicação no TCC</h3>
+<h4>Pontos de Análise:</h4>
+<ul>
+    <li>Eficácia do Phishing - Como usuários caem em páginas falsas</li>
+    <li>Falhas Humanas - Fatores psicológicos explorados</li>
+    <li>Prevenções - Medidas de proteção recomendadas</li>
+</ul>
 
+<h3>Resultados Esperados:</h3>
+<ul>
+    <li>Aumento da conscientização sobre segurança</li>
+    <li>Identificação de padrões de comportamento de risco</li>
+    <li>Desenvolvimento de melhores práticas de segurança</li>
+</ul>
 
-🎓 Aplicação no TCC
-Pontos de Análise:
-    Eficácia do Phishing - Como usuários caem em páginas falsas
-    Falhas Humanas - Fatores psicológicos explorados
-    Prevenções - Medidas de proteção recomendadas
-
-
-Resultados Esperados:
-    Aumento da conscientização sobre segurança
-    Identificação de padrões de comportamento de risco
-    Desenvolvimento de melhores práticas de segurança
-
-
-🛡️ Medidas de Proteção Demonstradas
-O que aprendemos:
-    ✅ Verificar certificados SSL
-    ✅ Não reutilizar senhas em redes públicas
-    ✅ Usar VPN em redes não confiáveis
-    ✅ Desativar WiFi automático
-    ✅ Verificar URLs antes de logins
+<h3>🛡️ Medidas de Proteção Demonstradas</h3>
+<h4>O que aprendemos:</h4>
+<ul>
+   <li> ✅ Verificar certificados SSL</li>
+    <li>✅ Não reutilizar senhas em redes públicas</li>
+    <li>✅ Usar VPN em redes não confiáveis</li>
+    <li>✅ Desativar WiFi automático</li>
+    <li>✅ Verificar URLs antes de logins</li>
+</ul>
  
+<h3>📊 Estrutura do Código</h3>
+<ul>
+	<li>// Organização principal:</li>
+	<li>1. Configurações iniciais e bibliotecas</li>
+	<li>2. Variáveis globais e SPIFFS</li>
+	<li>3. Setup - Inicialização do servidor</li>
+	<li>4. Rotas HTTP - Páginas web</li>
+	<li>5. Processamento de login</li>
+	<li>6. Captive portal URLs</li>
+	<li>7. Loop principal</li>
+</ul>	
  
-📊 Estrutura do Código
-	// Organização principal:
-	1. Configurações iniciais e bibliotecas
-	2. Variáveis globais e SPIFFS
-	3. Setup - Inicialização do servidor
-	4. Rotas HTTP - Páginas web
-	5. Processamento de login
-	6. Captive portal URLs
-	7. Loop principal
- 
-🤝 Contribuições
-
+<h3>🤝 Contribuições</h3>
 Este projeto é parte de um TCC acadêmico. Contribuições para melhorias educacionais são bem-vindas, desde que mantenham o foco ético e educativo.
 
 
-📜 Licença
+<h3>📜 Licença</h3>
 Este projeto está sob licença MIT. Veja o arquivo LICENSE para detalhes.
 
 
-📚 Referências
-    OWASP - Open Web Application Security Project
-    MITRE ATT&CK Framework
-    NIST Cybersecurity Framework
-    Artigos científicos sobre phishing awareness
+<h3>📚 Referências</h3>
+<ul>  
+	<li>OWASP - Open Web Application Security Project</li>
+    <li>MITRE ATT&CK Framework</li>
+    <li>NIST Cybersecurity Framework</li>
+    <li>Artigos científicos sobre phishing awareness</li>
+</ul>
