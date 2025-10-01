@@ -7,75 +7,81 @@
 
 📋 Sobre o Projeto<br>
 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) em Segurança da Informação, com o objetivo de demonstrar de forma prática e educativa os riscos associados a redes WiFi públicas e ataques de phishing através de captive portals.
-🎯 Objetivo Educacional
 
 
+🎯 Objetivo Educacional<br>
 ATENÇÃO: Este projeto tem fins exclusivamente educacionais e de pesquisa acadêmica. O objetivo é conscientizar usuários sobre os perigos de redes WiFi não confiáveis, não promover atividades maliciosas.
 
 
-⚠️ Aviso Legal e Ético
- .🔒 USO APENAS EDUCACIONAL - Nunca utilize em redes sem autorização
- .📝 CONSENTIMENTO - Sempre informe participantes sobre a natureza do experimento
- .🗑️ DADOS FICTÍCIOS - Use apenas dados de teste, destrua após pesquisa
- .⚖️ CONFORMIDADE LEGAL - Obedeça às leis locais de privacidade e segurança
+</h3>⚠️ Aviso Legal e Ético</h3>
+<ul> 
+	<li>🔒 USO APENAS EDUCACIONAL - Nunca utilize em redes sem autorização</li>
+	<li>📝 CONSENTIMENTO - Sempre informe participantes sobre a natureza do experimento</li>
+	<li>🗑️ DADOS FICTÍCIOS - Use apenas dados de teste, destrua após pesquisa</li>
+	<li>⚖️ CONFORMIDADE LEGAL - Obedeça às leis locais de privacidade e segurança</li>
+</ul>	
 	
-	
-🛠️ Tecnologias Utilizadas
-Componente	Descrição
-ESP32	Microcontrolador principal
-Arduino IDE	Ambiente de desenvolvimento
-SPIFFS	Sistema de arquivos para armazenamento
-DNS Server	Redirecionamento de tráfego
-Web Server	Servidor HTTP para páginas web
+</h3>🛠️ Tecnologias Utilizadas</h3>
+<ul>
+	<li>Componente	Descrição</li>
+	<li>ESP32	Microcontrolador principal</li>
+	<li>Arduino IDE	Ambiente de desenvolvimento</li>
+	<li>SPIFFS	Sistema de arquivos para armazenamento</li>
+	<li>DNS Server	Redirecionamento de tráfego</li>
+	<li>Web Server	Servidor HTTP para páginas web</li>
+</ul>
+
+📁 Estrutura do Projeto <br>
+TCC-Captive-Portal/<br>
+├── src/<br>
+│   └── captive_portal.ino      # Código principal<br>
+└── README.md                   # Este arquivo<br>
 
 
-📁 Estrutura do Projeto
-TCC-Captive-Portal/
-├── src/
-│   └── captive_portal.ino      # Código principal
-├── docs/
-│   ├── ethical_guidelines.md   # Diretrizes éticas
-│   └── presentation/           # Arquivos da apresentação
-├── schematics/                 # Diagramas de conexão
-└── README.md                   # Este arquivo
+<h2>🔧 Funcionalidades Implementadas</h2>
+
+<h3>1. 🎣 Páginas de Phishing Educacionais</h3>
+<ul>
+  <li><strong>Facebook Clone</strong> - Página idêntica ao Facebook</li>
+  <li><strong>Instagram Clone</strong> - Página idêntica ao Instagram</li>
+  <li><strong>Google Clone</strong> - Página idêntica ao Google</li>
+</ul>
+
+<h3>2. 🌐 Captive Portal Automático</h3>
+<ul>
+  <li><strong>Redirecionamento DNS</strong> de todos os domínios</li>
+  <li><strong>Detecção automática</strong> em Android, iOS e Windows</li>
+  <li><strong>Página inicial</strong> com múltiplas opções de login</li>
+</ul>
+
+<h3>3. 📊 Sistema de Monitoramento</h3>
+<ul>
+  <li><strong>Armazenamento local</strong> de tentativas de login</li>
+  <li><strong>Painel administrativo</strong> para visualização</li>
+  <li><strong>Logs em tempo real</strong> via Serial Monitor</li>
+</ul>
 
 
-🔧 Funcionalidades Implementadas
-1. 🎣 Páginas de Phishing Educacionais
- .Facebook Clone - Página idêntica ao Facebook
- .Instagram Clone - Página idêntica ao Instagram
- .Google Clone - Página idêntica ao Google
-
-
-2. 🌐 Captive Portal Automático
- .Redirecionamento DNS de todos os domínios
- .Detecção automática em Android, iOS e Windows
- .Página inicial com múltiplas opções de login
-
-
-3. 📊 Sistema de Monitoramento
- .Armazenamento local de tentativas de login
- .Painel administrativo para visualização
- .Logs em tempo real via Serial Monitor
-
-
-🚀 Como Funciona
-Fluxo do Sistema:
- .Usuário conecta na rede "WiFi 5G Livre"
- .Captive portal detecta e redireciona para página inicial
- .Usuário escolhe plataforma para "login"
- .Credenciais são capturadas (apenas para demonstração)
- .Acesso é liberado para internet real
- 
+<h3>🚀 Como Funciona</h3>
+<h3>Fluxo do Sistema:</h3>
+<ul>
+ <li>Usuário conecta na rede "WiFi 5G Livre"</li>
+ <li>Captive portal detecta e redireciona para página inicial</li>
+ <li>Usuário escolhe plataforma para "login"</li>
+ <li>Credenciais são capturadas (apenas para demonstração)</li>
+ <li>Acesso é liberado para internet real</li>
+</ul>
  
 URLs de Acesso:
- .Página Principal: http://192.168.4.1
- .Facebook Fake: http://192.168.4.1/facebook
- .Instagram Fake: http://192.168.4.1/instagram
- .Google Fake: http://192.168.4.1/google
- 
+<ul>
+ <li><strong>Página Principal:</strong> http://192.168.4.1</li>
+ <li><strong>Facebook Fake:</strong> http://192.168.4.1/facebook</li>
+ <li><strong>Instagram Fake:</strong> http://192.168.4.1/instagram</li>
+ <li><strong>Google Fake:</strong> http://192.168.4.1/google</li>
+</ul>
 
-🔌 Hardware Necessário
+
+<h3>🔌 Hardware Necessário</h3>
 <table> <thead> <tr> <th>Componente</th> <th>Quantidade</th> <th>Observações</th> <th>📸</th> </tr> </thead> <tbody> <tr> <td><strong>ESP32</strong></td> <td>1 unidade</td> <td>NodeMCU-32S ou ESP32 DevKit V1</td> <td>🟢</td> </tr> <tr> <td><strong>Cabo USB</strong></td> <td>1 unidade</td> <td>USB-C ou Micro-USB para alimentação e programação</td> <td>🔌</td> </tr> <tr> <td><strong>Fonte de Energia</strong></td> <td>1 unidade</td> <td>Powerbank 5V/2A ou adaptador USB</td> <td>🔋</td> </tr> <tr> <td><strong>Computador</strong></td> <td>1 unidade</td> <td>Com Arduino IDE instalado</td> <td>💻</td> </tr> </tbody> </table>
 
 
